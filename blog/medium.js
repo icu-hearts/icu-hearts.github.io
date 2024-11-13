@@ -58,7 +58,7 @@ $(function () {
 
                     var year = formattedDate.getFullYear();
                     var yourString = item.description.replace(/<img[^>]*>/g, ""); //replace with your string.
-                    var maxLength = 400; // maximum number of characters to extract
+                    var maxLength = 1250; // maximum number of characters to extract
                     var trimmedString = yourString.substr(0, maxLength);
                     trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")));
                     output += '<div class="row">' +

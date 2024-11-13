@@ -3,8 +3,7 @@ $(function () {
     var mediumName = "critical-care-futures";
     var apiKey = "<YOUR api.rss2json.com API KEY>"
     var data = {  
-        rss_url: 'https://medium.com/feed/@'+mediumName,
-        api_key: apiKey // put your api key here
+        rss_url: 'https://medium.com/feed/'+mediumName,
     };
     
     $.ajax({
@@ -63,7 +62,7 @@ $(function () {
                     var trimmedString = yourString.substr(0, maxLength);
                     trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")));
                     output += '<div class="row">' +
-                        '<div class="col-12 col-lg-8 col-md-8 col-sm-12 col-centered" style="margin: auto;">' +
+                        '<div class="col-12 col-centered" style="margin: auto;">' +
                         '<div class="mainbox">' +
                         '<div>' +
                         '<div class="profile_img">' +

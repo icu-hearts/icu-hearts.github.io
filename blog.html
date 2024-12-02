@@ -25,6 +25,19 @@
 		<!-- Wrapper -->
 			<div id="wrapper">
 
+				<!-- Placeholder for the header -->
+				<div id="header-placeholder"></div>
+
+				<!-- JavaScript to load the header -->
+				<script>
+					fetch('header.html')
+					.then(response => response.text())
+					.then(data => {
+						document.getElementById('header-placeholder').innerHTML = data;
+					})
+					.catch(error => console.error('Error loading header:', error));
+				</script>
+
 				<!-- Header -->
 					<header id="header">
 						<h1>ICU-Heart Research Group Blog</h1>

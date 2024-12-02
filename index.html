@@ -17,13 +17,18 @@
 		<!-- Wrapper -->
 			<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<span class="logo"><img src="images/ICU_Heart_WoT_Rectangle_C_Aligned_20p.png" alt="" /></span>
-						<!-- <h1>ICU-HEART</h1> -->
-						<!-- <p>Our vision is to use routine healthcare data to improve outcomes for critically ill patients with co-existing cardiovascular disease.<br /> -->
-						<!-- built by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a>.</p> -->
-					</header>
+				<!-- Placeholder for the header -->
+				<div id="header-placeholder"></div>
+
+				<!-- JavaScript to load the header -->
+				<script>
+					fetch('header.html')
+					.then(response => response.text())
+					.then(data => {
+						document.getElementById('header-placeholder').innerHTML = data;
+					})
+					.catch(error => console.error('Error loading header:', error));
+				</script>
 
 				<!-- Nav -->
 					<nav id="nav">

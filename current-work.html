@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Current work</title>
+		<link rel="icon" type="image/png" href="images/favicon.png">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Placeholder for the header -->
+				<div id="header-placeholder"></div>
+
+				<!-- JavaScript to load the header -->
+				<script>
+					fetch('header.html')
+					.then(response => response.text())
+					.then(data => {
+						document.getElementById('header-placeholder').innerHTML = data;
+					})
+					.catch(error => console.error('Error loading header:', error));
+				</script>
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Our current work</h1>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+						<!-- Content -->
+							<section id="content" class="main">
+								<span class="image main"><img src="images/usher.png" alt="Usher Building" /></span>
+								<p>When high-risk patients are admitted into ICU, they have a 1 in 4 chance of having a heart attack 
+									during their admission. Yet 95% of these heart attacks are missed — partly because critically ill 
+									patients do not have symptoms typical of heart attacks, and partly because diagnostic tests are 
+									only done intermittently, typically daily. For the first time using continuous ICU monitoring, 
+									our aim is to identify heart attacks systematically.
+								</p>
+								<p>
+									Most adults who are admitted to ICU have at least one if not more chronic conditions, 
+									yet historically researchers have failed to take this into account when designing trials. 
+									Treatments that work in one group of patients may cause harmful side-effects in another.
+									We will explore the relationship between chronic conditions and acute illness in critically 
+									unwell patients, along with further information that we acquire during their stay to understand
+									how these impact on organ dysfunction and longer-term outcomes. We will use cutting edge 
+									causal inference techniques that will help us explore whether the outcome is caused by the exposure, 
+									or if an apparent association is caused by a different exposure.
+								</p>
+								<p>
+									This information will help us to develop, deliver and evaluate tools to predict heart attacks 
+									before they happen, through using datasets of patients admitted to ICUs in Scotland, and test 
+									them in datasets of patients admitted to ICUs in England and Pittsburgh, USA. 
+									We ultimately aim to embed these algorithms within the NHS so that we can trial 
+									interventions in high-risk patients to prevent heart attacks from happening.
+								</p>
+							</section>
+
+					</div>
+
+				<!-- Placeholder for the footer -->
+				<div id="footer-placeholder"></div>
+
+				<!-- JavaScript to load the footer -->
+				<script>
+					fetch('footer.html')
+					.then(response => response.text())
+					.then(data => {
+						document.getElementById('footer-placeholder').innerHTML = data;
+					})
+					.catch(error => console.error('Error loading footer:', error));
+				</script>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

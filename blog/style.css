@@ -151,3 +151,9 @@ img {
 .no-js .pt-page * {
 	height: auto;
 }
+
+#topnav a {
+	color: #636363;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-weight: 300;
+}

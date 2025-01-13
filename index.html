@@ -7,6 +7,7 @@
 <html>
 	<head>
 		<title>ICU Heart</title>
+		<link rel="icon" type="image/png" href="images/favicon.png">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -17,21 +18,26 @@
 		<!-- Wrapper -->
 			<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<span class="logo"><img src="images/ICU_Heart_WoT_Rectangle_C_Aligned_20p.png" alt="" /></span>
-						<!-- <h1>ICU-HEART</h1> -->
-						<!-- <p>Our vision is to use routine healthcare data to improve outcomes for critically ill patients with co-existing cardiovascular disease.<br /> -->
-						<!-- built by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a>.</p> -->
-					</header>
+				<!-- Placeholder for the header -->
+				<div id="header-placeholder"></div>
+
+				<!-- JavaScript to load the header -->
+				<script>
+					fetch('header.html')
+					.then(response => response.text())
+					.then(data => {
+						document.getElementById('header-placeholder').innerHTML = data;
+					})
+					.catch(error => console.error('Error loading header:', error));
+				</script>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li><a href="#intro" class="active">Introduction</a></li>
-							<li><a href="#first">First Section</a></li>
-							<li><a href="#second">Second Section</a></li>
-							<li><a href="#cta">Get Started</a></li>
+							<li><a href="#intro" class="active">Our vision</a></li>
+							<li><a href="#first">Current work</a></li>
+							<li><a href="#second">Team</a></li>
+							<li><a href="#cta">Blog</a></li>
 						</ul>
 					</nav>
 
@@ -50,10 +56,10 @@
 											collaboration including patients and their relatives, clinicians, epidemiologists, data 
 											scientists and triallists.</p>
 										<ul class="actions">
-											<li><a href="generic.html" class="button">Learn More</a></li>
+											<li><a href="our-vision.html" class="button">Learn More</a></li>
 										</ul>
 									</div>
-									<span class="image"><img src="images/data.png" alt="" /></span>
+									<span class="image"><img src="images/ICU_short.jpg" alt="Picture of ICU with beds and monitor." /></span>
 								</div>
 							</section>
 
@@ -64,24 +70,24 @@
 							</header>
 							<ul class="features">
 								<li>
-									<span class="icon solid major style1 fa-code"></span>
+									<span class="icon solid major style1 fa-procedures"></span>
 									<h3>Diagnosing Myocardial Infarction</h3>
-									<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+									<p></p>
 								</li>
 								<li>
-									<span class="icon major style3 fa-copy"></span>
+									<span class="icon major style3 fa-handshake"></span>
 									<h3>Trust in AI</h3>
-									<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+									<p></p>
 								</li>
 								<li>
-									<span class="icon major style5 fa-gem"></span>
+									<span class="icon major style5 fa-hospital"></span>
 									<h3>Clinical phenotypes</h3>
-									<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+									<p></p>
 								</li>
 							</ul>
 							<footer class="major">
 								<ul class="actions special">
-									<li><a href="generic.html" class="button">Learn More</a></li>
+									<li><a href="current-work.html" class="button">Learn More</a></li>
 								</ul>
 							</footer>
 						</section>
@@ -90,6 +96,7 @@
 						<section id="second" class="main special">
 							<header class="major">
 								<h2>Our team</h2>
+								<span class="image main"><img src="images/team.jpg" alt="The ICU-Heart team" /></span>
 								<p>With expertise in clinical, informatics and qualitative research, our team is a diverse, multi-disciplinary collaboration across multiple research areas.</p>
 							</header>
 							<footer class="major">
@@ -103,8 +110,7 @@
 							<section id="second" class="main special">
 								<header class="major">
 									<h2>Blog</h2>
-									<p>Our research group blog where we...<br />
-									(currently a simple embed).</p>
+									<p>Our research group blog</p>
 								</header>
 								<footer class="major">
 									<ul class="actions special">
@@ -118,47 +124,42 @@
 							<section id="cta" class="main special">
 								<header class="major">
 									<h2>Get in touch</h2>
-									<p>This is where we will put our contact information.<br />
-									This is the second line.</p>
 								</header>
+								<p>
+									The ICU-Heart group is based at the Centre for Medical Informatics in the Usher Building at Edinburgh BioQuarter:<br><br>
+								</p>
+								<div align="left">
+									<b>
+										Usher Building<br>
+										The University of Edinburgh<br>
+										5-7 Little France Road<br>
+										Edinburgh BioQuarter - Gate 3<br>
+										EDINBURGH<br>
+										EH16 4UX
+									</b>
+								</div>
 								<footer class="major">
 									<ul class="actions special">
-										<li><a href="generic.html" class="button primary">Contact us</a></li>
-										<!-- <li><a href="generic.html" class="button">Learn More</a></li>
+										<li><a href="team.html" class="button primary">Contact us</a></li>
 									</ul>
 								</footer>
-							</section> -->
+							</section> 
 
 					</div>
 					
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<h2>Aliquam sed mauris</h2>
-							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
-							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn More</a></li>
-							</ul>
-						</section>
-						<section>
-							<h2>Navigation</h2>
-							<p>
-								<a href="index.html">Home</a><br>
-								<a href="generic.html">About</a><br>
-								<a href="team.html">Team</a><br>
-								<a href="blog.html">Blog</a><br>
-							</p>
-							<ul class="icons">
-								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
-							</ul>
-						</section>
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
+					<!-- Placeholder for the footer -->
+					<div id="footer-placeholder"></div>
+
+					<!-- JavaScript to load the footer -->
+					<script>
+						fetch('footer.html')
+						.then(response => response.text())
+						.then(data => {
+							document.getElementById('footer-placeholder').innerHTML = data;
+						})
+						.catch(error => console.error('Error loading footer:', error));
+					</script>
 
 			</div>
 

@@ -1,6 +1,6 @@
 $(function () {
     var $content = $('#jsonContent');
-    var mediumName = "critical-care-futures";
+    var mediumName = "icu-heart";
     var apiKey = "<YOUR api.rss2json.com API KEY>"
     var data = {  
         rss_url: 'https://medium.com/feed/'+mediumName,

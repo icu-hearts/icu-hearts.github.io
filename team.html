@@ -7,6 +7,7 @@
 <html>
 	<head>
 		<title>Our Team</title>
+		<link rel="icon" type="image/png" href="images/favicon.png">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -17,66 +18,137 @@
 		<!-- Wrapper -->
 			<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<h1>Our Team</h1>
-					</header>
+				<!-- Placeholder for the header -->
+				<div id="header-placeholder"></div>
 
+				<!-- JavaScript to load the header -->
+				<script>
+					fetch('header.html')
+					.then(response => response.text())
+					.then(data => {
+						document.getElementById('header-placeholder').innerHTML = data;
+					})
+					.catch(error => console.error('Error loading header:', error));
+				</script>
+				<header><h1>Our Team</h1></header>
 				<!-- Main -->
 					<div id="main">
-
 						<!-- Content -->
 							<section id="content" class="main">
-								<span class="image left"><img src="images/annemarie_profile.jpg" alt="" /></span>
+								<span class="image left"><img src="images/profiles/steph_profile.jpg" alt="Steph Burns" /></span>
+								<h2>Steph Burns</h2>
+								<p>I am a Social Science Research Assistant with a background in Anthropology and Global Health Policy. I am focussing on the sociotechnical 
+									analysis of the project and interested in using social science techniques to understand trust at the data-care interface in ICU environments.
+								</p>
+								<ul class="icons">
+									<li><a href="mailto:stephanie.burns@ed.ac.uk" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="https://edwebprofiles.ed.ac.uk/profile/steph-burns" class="icon solid alt fa-link"><span class="label">Website</span></a></li>
+								</ul>
+							</section>
+							<section id="content" class="main">
+								<span class="image left"><img src="images/profiles/annemarie_profile.jpg" alt="Annemarie Docherty" /></span>
 								<h2>Dr Annemarie Docherty</h2>
-								<p>Wellcome CDA Fellow and Honorary ICU Consultant, University of Edinburgh.</p>
+								<p>I hold a Wellcome Career Development Award and am a Consultant in Critical Care at the Royal Infirmary Edinburgh. My research 
+									focuses on the transformation of care and outcomes for Intensive Care (ICU) patients by unlocking the potential of these data-rich 
+									clinical environments. </p>
 								<ul class="icons">
 									<!-- TODO add link -->
-									<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="mailto:annemarie.docherty@ed.ac.uk" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
 									<li><a href="https://www.research.ed.ac.uk/en/persons/annemarie-docherty" class="icon solid alt fa-link"><span class="label">Website</span></a></li>
 								</ul>
 							</section>
 							<section id="content" class="main">
-								<span class="image left"><img src="images/pic01.jpg" alt="" /></span>
-								<h2>Name</h2>
-								<p>Bio</p>
+								<span class="image left"><img src="images/profiles/craig_profile.jpg" alt="Craig Nicolson" /></span>
+								<h2>Dr Craig Nicolson</h2>
+								<p>
+									I am a Post-Doctoral Researcher from a background of clinical practice with a Masters in Biomedical AI. I am interested in 
+									working with large volumes of routine healthcare data to improve care and clinical practice using machine learning and AI. 
+									I am particularly focused on using these tools for real world problems and implementing them in standard patient care.
+								</p>
 								<ul class="icons">
-									<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-									<li><a href="#" class="icon solid alt fa-link"><span class="label">Website</span></a></li>
-									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									<!-- TODO add link -->
+									<li><a href="mailto:craig.nicolson@ed.ac.uk" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="https://edwebprofiles.ed.ac.uk/profile/craig-nicolson" class="icon solid alt fa-link"><span class="label">Website</span></a></li>
+								</ul>
+							</section>
+							<section id="content" class="main">
+								<span class="image left"><img src="images/profiles/rosalyn_profile.jpg" alt="Rosalyn Pearson" /></span>
+								<h2>Dr Rosalyn Pearson</h2>
+								<p>I am a Data Analyst with a background in particle physics. I transitioned to healthcare informatics
+									through my work as an analyst at Public Health Scotland. At ICU-Heart my focus is on
+									identifying myocardial infarction using high-frequency data from continuous 
+									monitoring in ICU.
+								</p>
+								<ul class="icons">
+									<li><a href="mailto:rosalyn.pearson@ed.ac.uk" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="https://www.ed.ac.uk/profile/rosalyn-pearson" class="icon solid alt fa-link"><span class="label">Website</span></a></li>
+								</ul>
+							</section>
+							<section id="content" class="main">
+								<span class="image left"><img src="images/profiles/malcolm_profile.jpg" alt="Malcolm Phillips" /></span>
+								<h2>Dr Malcolm Phillips</h2>
+								<p>
+									...
+								</p>
+								<ul class="icons">
+									<!-- TODO add link -->
+									<li><a href="mailto:malcolm.phillips@nhs.scot" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="" class="icon solid alt fa-link"><span class="label">Website</span></a></li>
+								</ul>
+							</section>
+							<section id="content" class="main">
+								<span class="image left"><img src="images/profiles/ian_profile.jpg" alt="Ian Piper" /></span>
+								<h2>Dr Ian Piper</h2>
+								<p>I am a Healthcare Scientist with an interest in time-series analysis of ICU monitoring data towards improved 
+									identification of abnormal physiology.  I enjoy supporting multi centre collaborations.
+								</p>
+								<ul class="icons">
+									<!-- TODO add link -->
+									<li><a href="mailto:ipiper2@exseed.ed.ac.uk" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="https://www.ed.ac.uk/profile/ian-piper" class="icon solid alt fa-link"><span class="label">Website</span></a></li>
+								</ul>
+							</section>
+							<section id="content" class="main">
+								<span class="image left"><img src="images/profiles/sinziana_profile.jpg" alt="Sinziana Radulescu" /></span>
+								<h2>Dr Sinziana Radulescu</h2>
+								<p>
+									I am a veterinary surgeon and an Edinburgh Clinical Academic Track (ECAT) lecturer. I am currently undertaking a PhD focused on 
+									exploring the interplay between multimorbidity, polypharmacy and frailty in ICU patients.
+								</p>
+								<ul class="icons">
+									<!-- TODO add link -->
+									<li><a href="mailto:sinziana.radulescu@ed.ac.uk" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="https://edwebprofiles.ed.ac.uk/profile/sinziana-radulescu2" class="icon solid alt fa-link"><span class="label">Website</span></a></li>
+								</ul>
+							</section>
+							<section id="content" class="main">
+								<span class="image left"><img src="images/profiles/stella_profile.jpg" alt="Stella Rhode" /></span>
+								<h2>Stella Rhode</h2>
+								<p>I have a background in philosophy and computer science and am undertaking an EPSRC PhD exploring 
+									the ethical application of AI and causal inference methods for risk prediction in critical care. 
+									I am interested in exploring how philosophical and technical thinking can be integrated to make 
+									explicit the ethical and epistemological impacts of decisions made during model development.
+								</p>
+								<ul class="icons">
+									<!-- TODO add link -->
+									<li><a href="mailto:stella.rhode@ed.ac.uk" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="https://www.ed.ac.uk/profile/stella-jane-rhode" class="icon solid alt fa-link"><span class="label">Website</span></a></li>
 								</ul>
 							</section>
 					</div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<h2>Aliquam sed mauris</h2>
-							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
-							<ul class="actions">
-								<li><a href="#" class="button">Learn More</a></li>
-							</ul>
-						</section>
-						<section>
-							<h2>Etiam feugiat</h2>
-							<dl class="alt">
-								<dt>Address</dt>
-								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
-								<dt>Phone</dt>
-								<dd>(000) 000-0000 x 0000</dd>
-								<dt>Email</dt>
-								<dd><a href="#">information@untitled.tld</a></dd>
-							</dl>
-							<ul class="icons">
-								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
-							</ul>
-						</section>
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
+					<!-- Placeholder for the footer -->
+					<div id="footer-placeholder"></div>
+
+					<!-- JavaScript to load the footer -->
+					<script>
+						fetch('./footer.html')
+						.then(response => response.text())
+						.then(data => {
+							document.getElementById('footer-placeholder').innerHTML = data;
+						})
+						.catch(error => console.error('Error loading footer:', error));
+					</script>
 
 			</div>
 

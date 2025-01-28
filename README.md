@@ -1,6 +1,6 @@
 # ICU-Heart website
 
-This is the code for the ICU-Heart website which can be found at [https://icu-hearts.github.io/](https://icu-hearts.github.io/).
+This is the code for the ICU-Heart website which can be found at [https://icu-heart.github.io/](https://icu-heart.github.io/).
 
 >[!NOTE]
 > The website is based on the template
